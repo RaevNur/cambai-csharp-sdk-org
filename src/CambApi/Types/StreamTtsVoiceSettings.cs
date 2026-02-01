@@ -11,4 +11,7 @@ public record StreamTtsVoiceSettings
 
     [JsonPropertyName("maintain_source_accent")]
     public bool? MaintainSourceAccent { get; set; }
+
+    [JsonPropertyName("apply_ref_loudness_norm")]
+    public bool? ApplyRefLoudnessNorm { get; set; }
 }

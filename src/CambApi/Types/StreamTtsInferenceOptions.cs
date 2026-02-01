@@ -17,4 +17,10 @@ public record StreamTtsInferenceOptions
 
     [JsonPropertyName("speaker_similarity")]
     public double? SpeakerSimilarity { get; set; }
+
+    [JsonPropertyName("localize_speaker_weight")]
+    public double? LocalizeSpeakerWeight { get; set; }
+
+    [JsonPropertyName("acoustic_quality_boost")]
+    public bool? AcousticQualityBoost { get; set; }
 }
