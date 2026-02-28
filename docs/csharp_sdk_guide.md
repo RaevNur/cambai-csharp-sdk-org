@@ -40,7 +40,7 @@ var responseStream = await client.TextToSpeech.TtsAsync(new CreateStreamTtsReque
     Text = "Hello! Welcome to Camb.ai text-to-speech.",
     Language = CreateStreamTtsRequestPayloadLanguage.EnUs,
     VoiceId = 147320,
-    SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsFlash,
+    SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.Mars8Flash,
     OutputConfiguration = new StreamTtsOutputConfiguration
     {
         Format = OutputFormat.Wav
@@ -77,7 +77,7 @@ Camb.ai offers three MARS models optimized for different use cases:
 ### MARS Flash
 
 ```csharp
-SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsFlash
+SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.Mars8Flash
 ```
 
 **Best for**: Real-time voice agents, low-latency applications  
@@ -86,7 +86,7 @@ SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsFlash
 ### MARS Pro
 
 ```csharp
-SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsPro
+SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.Mars8Pro
 ```
 
 **Best for**: Audio production, high-quality content  
@@ -95,7 +95,7 @@ SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsPro
 ### MARS Instruct
 
 ```csharp
-SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.MarsInstruct,
+SpeechModel = CreateStreamTtsRequestPayloadSpeechModel.Mars8Instruct,
 UserInstructions = "Speak in a warm, friendly tone"
 ```
 
@@ -172,6 +172,6 @@ var ttsProvider = new BasetenProvider(
 
 ## Resources
 
-*   [GitHub: camb-ai/cambai-csharp-sdk](https://github.com/Camb-ai/cambai-csharp-sdk)
-*   [SDK Examples](https://github.com/Camb-ai/cambai-csharp-sdk/tree/master/examples)
-*   [API Reference](https://docs.camb.ai/api-reference/endpoint/create-tts-stream)
+* [GitHub: camb-ai/cambai-csharp-sdk](https://github.com/Camb-ai/cambai-csharp-sdk)
+* [SDK Examples](https://github.com/Camb-ai/cambai-csharp-sdk/tree/master/examples)
+* [API Reference](https://docs.camb.ai/api-reference/endpoint/create-tts-stream)
