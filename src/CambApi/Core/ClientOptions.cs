@@ -25,5 +25,5 @@ public partial class ClientOptions
     /// <summary>
     /// The timeout for the request.
     /// </summary>
-    public TimeSpan Timeout { get; init; } = TimeSpan.FromSeconds(30);
+    public TimeSpan Timeout { get; init; } = TimeSpan.FromSeconds(300);
 }
